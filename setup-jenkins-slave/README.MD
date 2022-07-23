@@ -38,7 +38,7 @@ cd /var/lib/jenkins/.ssh
 ssh-keyscan -H SLAVE-NODE-IP-OR-HOSTNAME >>/var/lib/jenkins/.ssh/known_hosts
 # ssh-keyscan -H 172.31.38.42 >>/var/lib/jenkins/.ssh/known_hosts
 chown jenkins:jenkins /var/lib/jenkins/.ssh/known_hosts
-chmod 700 known_hosts
+chmod 700 /var/lib/jenkins/.ssh/known_hosts
 ```
 
 #### Configure the Slave using `Manage Jenkins`
